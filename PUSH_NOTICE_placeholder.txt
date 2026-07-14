@@ -1,0 +1,1 @@
+Add placeholder and will replace with real GeoJSON in next push
