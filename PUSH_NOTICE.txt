@@ -1,0 +1,1 @@
+Updated GEOJSON_URL to a working raw GitHub URL (donpark/geojson) to fix 404 when loading provinces.geojson
