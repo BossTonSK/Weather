@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>สภาพอากาศรายจังหวัด — ประเทศไทย</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>สภาพอากาศรายจังหวัด</h1>
+    <nav>
+      <a href="/index.html">แผนที่</a>
+      <a href="/weather.html">สภาพอากาศ (รายจังหวัด)</a>
+      <a href="/pm25.html">PM2.5 (รายจังหวัด)</a>
+    </nav>
+  </header>
+
+  <main class="list-page">
+    <div class="search-row">
+      <input id="search" placeholder="ค้นหาจังหวัด..." />
+    </div>
+    <ul id="list" class="province-list"></ul>
+  </main>
+
+  <footer>
+    <small>ข้อมูลตัวอย่าง (Mock) — ดู README เพื่อเชื่อมต่อ API จริง</small>
+  </footer>
+
+  <script src="/config.js"></script>
+  <script src="/assets/main.js"></script>
+  <script src="/assets/weather_page.js"></script>
+</body>
+</html>

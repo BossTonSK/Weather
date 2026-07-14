@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>แผนที่สภาพอากาศและ PM2.5 ประเทศไทย</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>สภาพอากาศ & PM2.5 — ประเทศไทย</h1>
+    <nav>
+      <a href="/index.html">แผนที่</a>
+      <a href="/weather.html">สภาพอากาศ (รายจังหวัด)</a>
+      <a href="/pm25.html">PM2.5 (รายจังหวัด)</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section id="map-section">
+      <div id="map"></div>
+    </section>
+
+    <aside id="sidepanel" class="panel">
+      <button id="close-panel" title="ปิด">✕</button>
+      <div id="panel-content">
+        <h2 id="prov-name">เลือกจังหวัด</h2>
+        <div class="stat-row"><strong>สภาพอากาศ:</strong> <span id="wea-status">-</span></div>
+        <div class="stat-row"><strong>อุณหภูมิ:</strong> <span id="wea-temp">-</span></div>
+        <div class="stat-row"><strong>PM2.5:</strong> <span id="pm25-val">-</span></div>
+        <div class="panel-actions">
+          <a id="goto-weather" class="btn" href="#">ดูรายละเอียดสภาพอากาศ</a>
+          <a id="goto-pm25" class="btn" href="#">ดูรายละเอียด PM2.5</a>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <small>ข้อมูลตัวอย่าง (Mock) — ดู README เพื่อเชื่อมต่อ API จริง</small>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/config.js"></script>
+  <script src="/assets/main.js"></script>
+  <script src="/assets/index.js"></script>
+</body>
+</html>
