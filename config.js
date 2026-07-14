@@ -1,7 +1,7 @@
 // config.js - ปรับค่านี้เพื่อเชื่อม API จริง
 window.APP_CONFIG = {
-  // GeoJSON ของจังหวัดไทย (เปลี่ยนเป็น raw URL ที่ใช้งานได้)
-  GEOJSON_URL: 'https://raw.githubusercontent.com/donpark/geojson/master/thailand/provinces.geojson',
+  // GeoJSON ของจังหวัดไทย (ใช้ raw GitHub URL ของชุดข้อมูลขอบเขตจังหวัด)
+  GEOJSON_URL: 'https://raw.githubusercontent.com/chingchai/OpenGISData-Thailand/master/provinces.geojson',
 
   // ถ้า USE_LIVE = false จะใช้ข้อมูล mock ที่สร้างขึ้นอัตโนมัติ
   USE_LIVE: false,
