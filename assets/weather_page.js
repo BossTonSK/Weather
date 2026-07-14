@@ -16,7 +16,7 @@
       left.appendChild(el('div','prov-name',it.name));
       left.appendChild(el('div','meta',it.status + ' · ' + it.temp + '°C'));
       const right = el('div','right');
-      const btn = el('a','btn','ดู'); btn.href = '/index.html?province=' + encodeURIComponent(it.name);
+      const btn = el('a','btn','ดู'); btn.href = 'index.html?province=' + encodeURIComponent(it.name);
       right.appendChild(btn);
       li.appendChild(left); li.appendChild(right);
       listEl.appendChild(li);

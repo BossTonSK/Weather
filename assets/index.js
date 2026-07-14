@@ -68,8 +68,8 @@
     }
 
     // links
-    document.getElementById('goto-weather').href = '/weather.html?province=' + encodeURIComponent(p.name);
-    document.getElementById('goto-pm25').href = '/pm25.html?province=' + encodeURIComponent(p.name);
+    document.getElementById('goto-weather').href = 'weather.html?province=' + encodeURIComponent(p.name);
+    document.getElementById('goto-pm25').href = 'pm25.html?province=' + encodeURIComponent(p.name);
   }
 
 })();
